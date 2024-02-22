@@ -1,0 +1,18 @@
+@import "./reset.css";
+
+body {
+	font-family: 'Roboto';
+}
+
+:root {
+	--color-pf-background: #241d17;
+	--color-pf-primary: #5499eb;
+	--color-pf-primary-2: #001c3e;
+	--color-pf-white: #f5f8fd;
+	--color-pf-gray: #6c5e52;
+	--color-pf-light-gray: #d9d4d0;
+
+	--color-pf-landing-gradient: linear-gradient(to bottom, #15191e, #020d1e 80%, #173460);
+
+	--dimension-container-width: 1296px;
+}
