@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Container from './Container.svelte';
+	import Container from '../Container.svelte';
 	import LandingBackground from './LandingBackground.svelte';
 	import NavBar from './NavBar.svelte';
 	import TechStack from './TechStack.svelte';
@@ -16,7 +16,7 @@
 		<div class="landing-content">
 			<div class="hero-card">
 				<section class="hero-text-side">
-					<h1>Hello I'm Stevie.</h1>
+					<h1 id="">Hello I'm Stevie.</h1>
 
 					<p class="dev-text">
 						I am a <span class="dev-job-title">Front End Developer</span>&period;
@@ -46,6 +46,7 @@
     z-index: 2;
 		height: 969px;
 		background-image: var(--color-pf-landing-gradient);
+    overflow: hidden;
 	}
 
 	.landing-content {

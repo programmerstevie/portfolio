@@ -10,8 +10,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      height: 100%;
 			div.container_inner {
         width: 1296px;
+        height: 100%;
 			}
 		}
 	}

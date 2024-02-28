@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { color_logo } from './TechLogos';
+	import { color_logo } from '../TechLogos';
 </script>
 
 <header>Tech Stack</header>
@@ -7,46 +7,46 @@
 	<li class="tech script">
 		<ul>
 			<li>
-				<div><img src={color_logo.js} alt="javascript" /></div>
+				<div title="Javascript"><img src={color_logo.js} alt="javascript" /></div>
 			</li>
 			<li>
-				<div><img src={color_logo.ts} alt="typescript" /></div>
+				<div title="Typescript"><img src={color_logo.ts} alt="typescript" /></div>
 			</li>
 		</ul>
 	</li>
 	<li class="tech structuring">
 		<ul>
 			<li>
-				<div><img src={color_logo.html5} alt="html5" /></div>
+				<div title="HTML5"><img src={color_logo.html5} alt="html5" /></div>
 			</li>
 			<li>
-				<div><img src={color_logo.css3} alt="css3" /></div>
+				<div title="CSS3"><img src={color_logo.css3} alt="css3" /></div>
 			</li>
 		</ul>
 	</li>
 	<li class="tech script-framework">
 		<ul>
 			<li>
-				<div><img src={color_logo.react} alt="react" /></div>
+				<div title="React"><img src={color_logo.react} alt="react" /></div>
 			</li>
 			<li>
-				<div><img src={color_logo.nextjs} alt="nextjs" /></div>
+				<div title="Next.js"><img src={color_logo.nextjs} alt="nextjs" /></div>
 			</li>
 			<li>
-				<div><img src={color_logo.svelte} alt="svelte" /></div>
+				<div title="Svelte"><img src={color_logo.svelte} alt="svelte" /></div>
 			</li>
 			<li>
-				<div><img src={color_logo.angular} alt="angular" /></div>
+				<div title="Angular"><img src={color_logo.angular} alt="angular" /></div>
 			</li>
 		</ul>
 	</li>
 	<li class="tech styling-framework">
 		<ul>
 			<li>
-				<div><img src={color_logo.sass} alt="sass" /></div>
+				<div title="SASS"><img src={color_logo.sass} alt="sass" /></div>
 			</li>
 			<li>
-				<div><img src={color_logo.tailwind} alt="tailwind" /></div>
+				<div title="Tailwind"><img src={color_logo.tailwind} alt="tailwind" /></div>
 			</li>
 		</ul>
 	</li>
@@ -84,6 +84,9 @@
 					height: 52px;
 					width: 52px;
 					position: relative;
+					transition: transform 0.3s;
+					transform: translate(0, 0);
+					transition-timing-function: ease-in-out;
 
 					img {
 						width: 52px;
@@ -98,14 +101,14 @@
 						right: 0;
 						bottom: 0;
 						left: 0;
-						transition: background-color;
-						transition-duration: 0.3s;
-            transition-timing-function: ease-in-out;
-						background: rgba(255, 255, 255, 0);
+						transition: background-color 0.2s;
+						transition-timing-function: ease-in-out;
+						background-color: rgba(255, 255, 255, 0);
 						border-radius: 7px;
 					}
 					&:hover {
-            transition-timing-function: ease-out;
+						transform: translate(0, -10px);
+						transition-timing-function: ease-out;
 						&:before {
 							background: rgba(255, 255, 255, 0.5);
 						}
