@@ -105,7 +105,7 @@
 			inset: -25px;
 			background: linear-gradient(-45deg, var(--color-pf-light-gray), var(--color-pf-white));
 			transform: translateZ(-50px);
-			filter: opacity(0);
+			filter: opacity(0.5);
 		}
 
 		& > * {
@@ -122,7 +122,6 @@
 				position: absolute;
 				content: '';
 				inset: 0.75rem;
-				// inset: 0rem;
 				background: black;
 				transform: translateZ(-39px);
 				filter: blur(15px);
@@ -146,7 +145,8 @@
 				inset: 1.4rem;
 				transform: translateZ(-69px) rotate(-13deg);
 				filter: blur(15px);
-				opacity: 0.7;
+				// opacity: 0.7;
+        opacity: 0;
 				z-index: -1;
 				border: black solid 6px;
 				border-radius: 10px;
@@ -168,7 +168,8 @@
 				background: black;
 				transform: translateZ(-49px);
 				filter: blur(15px);
-				opacity: 0.2;
+				// opacity: 0.2;
+        opacity: 0;
 				z-index: -1;
 			}
 		}
@@ -177,7 +178,7 @@
 			left: 191px;
 			top: 234px;
 			transform-style: preserve-3d;
-			transform: translateZ(0px);
+			transform: translateZ(10px);
 
 			&::before {
 				position: absolute;
