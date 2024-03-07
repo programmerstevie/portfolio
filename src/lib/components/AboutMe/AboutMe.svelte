@@ -1,12 +1,13 @@
 <script>
 	import Container from '../Container.svelte';
+	import PhotoSide from './PhotoSide.svelte';
 
 	import boxCodeIcon from '$lib/assets/icons/general/svg/box-code.svg';
 	import personIcon from '$lib/assets/icons/general/svg/person icon.svg';
 	import codeIcon from '$lib/assets/icons/general/svg/code icon.svg';
 	import calendarIcon from '$lib/assets/icons/general/svg/calendar icon.svg';
 	import globeIcon from '$lib/assets/icons/general/svg/globe icon.svg';
-	import PhotoSide from './PhotoSide.svelte';
+	import hoverHerePrompt from '$lib/assets/icons/general/svg/Hover Here.svg';
 
 	/**
 	 * @type {HTMLElement}
@@ -74,6 +75,11 @@
 				</ul>
 			</div>
 		</div>
+		<footer>
+			<div>
+				<img src={hoverHerePrompt} alt="" />
+			</div>
+		</footer>
 	</Container>
 </section>
 
@@ -96,8 +102,10 @@
 			// border: blue solid 2px;
 			min-height: 721px;
 			display: flex;
-			align-items: center;
+			// align-items: center;
+			padding-top: 30px;
 			justify-content: center;
+			position: relative;
 		}
 		.text-side {
 			margin-left: 25px;
@@ -145,33 +153,60 @@
 						font-weight: 400;
 						color: var(--color-pf-gray);
 						flex-shrink: 1;
-            line-height: 24px;
+						line-height: 24px;
 					}
 				}
 			}
 			ul.contact-info {
-        margin-top: 28px;
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 30px;
+				margin-top: 28px;
+				display: flex;
+				flex-wrap: wrap;
+				row-gap: 30px;
 
 				li {
-          width: 50%;
-          font-weight: 400;
-          font-size: 20px;
-          color: var(--color-pf-gray);
+					width: 50%;
+					font-weight: 400;
+					font-size: 20px;
+					color: var(--color-pf-gray);
 
-          @media screen and (max-width: 768px) {
-            width: 100%;
-          }
+					@media screen and (max-width: 768px) {
+						width: 100%;
+					}
 
 					h3 {
-            font-weight: 700;
-            font-size: 20px;
-            color: var(--color-pf-background);
+						font-weight: 700;
+						font-size: 20px;
+						color: var(--color-pf-background);
 					}
 				}
 			}
 		}
 	}
+
+	footer {
+		display: flex;
+    
+    div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    
+      img {
+        animation-name: inflate_deflate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+      }
+    }
+	}
+
+  @keyframes inflate_deflate {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
 </style>
