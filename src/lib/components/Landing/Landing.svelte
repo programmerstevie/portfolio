@@ -98,15 +98,31 @@
         width: 366px;
         height: 476px;
         border-radius: 181px;
-        background-color: var(--color-pf-primary-2);
-        margin-right: 31px;
+        // background-color: var(--color-pf-primary);
+        // margin-right: 31px;
         margin-top: 28px;
+        border-color: var(--color-pf-primary);
+        border-width: 5px;
+        border-style: solid;
+        animation: oval 2s ease-in-out infinite alternate;
       }
 
       img {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 31px;
+        animation: oval ease-in-out infinite alternate;
+        animation-duration: 2s;
+        animation-delay: .5s;
+      }
+
+      @keyframes oval {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(60px);
+        }
       }
     }
 	}
