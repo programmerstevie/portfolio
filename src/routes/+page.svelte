@@ -9,3 +9,5 @@
 <AttributesBar />
 <AboutMe />
 <ToolingBar />
+<div id="PORTFOLIO" />
+<div id="CONTACT" />
