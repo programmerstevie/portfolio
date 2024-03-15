@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Container from '../Container.svelte';
+	import Container from '../../Container.svelte';
 	import LandingBackground from './LandingBackground.svelte';
 	import NavBar from './NavBar.svelte';
 	import TechStack from './TechStack.svelte';

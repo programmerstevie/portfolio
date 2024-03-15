@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { color_logo } from '../TechLogos';
+	import { color_logo } from '../../TechLogos';
 </script>
 
 <header>Tech Stack</header>

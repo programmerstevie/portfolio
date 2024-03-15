@@ -1,5 +1,5 @@
 <script>
-  import checkIcon from '$lib/assets/icons/general/svg/check circle.svg';
+	import checkIcon from '$lib/assets/icons/general/svg/check circle.svg';
 </script>
 
 <div>
@@ -29,4 +29,33 @@
 		font-size: 15px;
 		font-family: 'Roboto' sans-serif;
 	}
+
+	div:hover {
+		cursor: default;
+		animation-name: bloop;
+		animation-duration: 0.5s;
+		animation-timing-function: ease-in-out;
+	}
+
+	/* @keyframes bloop {
+		from {
+			transform: scale(1);
+		}
+
+    25% {
+			transform: scale(.99);
+    }
+
+		50% {
+			transform: scale(1.05);
+		}
+
+		75% {
+			transform: scale(.99);
+		}
+
+		to {
+			transform: scale(1);
+		}
+	} */
 </style>

@@ -1,5 +1,5 @@
 <script>
-	import Container from '../Container.svelte';
+	import Container from '../../Container.svelte';
 	import PhotoSide from './PhotoSide.svelte';
 
 	import boxCodeIcon from '$lib/assets/icons/general/svg/box-code.svg';

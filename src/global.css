@@ -16,3 +16,26 @@ body {
 
 	--dimension-container-width: 1296px;
 }
+
+
+@keyframes bloop {
+  from {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(.99);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  75% {
+    transform: scale(.99);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
