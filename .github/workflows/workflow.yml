@@ -30,4 +30,4 @@ jobs:
         run: npm run build
 
       - name: Deploy Website
-        run: aws s3 rm s3://www.programmerstevie.com --recursive; aws s3 cp build s3://www.programmerstevie.com/ --recursive
+        run: aws s3 rm s3://programmerstevie.com --recursive; aws s3 cp build s3://programmerstevie.com/ --recursive
