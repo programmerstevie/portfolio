@@ -104,7 +104,7 @@
         border-color: var(--color-pf-primary);
         border-width: 5px;
         border-style: solid;
-        animation: oval 2s ease-in-out infinite alternate;
+        animation: oval 4s ease-in-out infinite alternate;
       }
 
       img {
@@ -112,7 +112,7 @@
         top: 0;
         right: 31px;
         animation: oval ease-in-out infinite alternate;
-        animation-duration: 2s;
+        animation-duration: 4s;
         animation-delay: .5s;
       }
 
