@@ -85,7 +85,7 @@
 
 <style lang="scss">
 	section {
-		background-color: #fff;
+		background-color: var(--color-pf-white);
 		height: 1034px;
 	}
 

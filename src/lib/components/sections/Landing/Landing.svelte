@@ -108,6 +108,10 @@
       }
 
       img {
+        width: 366px;
+        height: 476px;
+        border-radius: 181px;
+        object-fit: cover;
         position: absolute;
         top: 0;
         right: 31px;
