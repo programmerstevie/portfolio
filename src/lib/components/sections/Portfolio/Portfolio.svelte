@@ -2,18 +2,47 @@
 	import Container from '$lib/components/Container.svelte';
 
 	import sparkle from '$lib/assets/icons/general/svg/sparkle.svg';
+	import ProjectPreview from './ProjectPreview.svelte';
+
+	import projectData from './Projects';
+	import type { PortfolioProjectData, ProjectName } from './Projects/resources/types';
+	import ReelModal from './ReelModal.svelte';
+
+	const projectOrder: ProjectName[] = ['ARCHIVS', 'HALite', 'DiligentlyAI', 'Tasque'];
+
+	let reelModalOpen = false;
+	let reelModalProjectData: PortfolioProjectData | null = null;
+
+	function openReelModal(proj: PortfolioProjectData) {
+		reelModalOpen = true;
+		reelModalProjectData = proj;
+	}
+  function closeReelModal() {
+    reelModalOpen = false;
+    reelModalProjectData = null;
+  }
 </script>
 
-<Container>
-	<header>
-		<h2 id="PORTFOLIO" class="pf-header">My Portfolio <img src={sparkle} alt="" /></h2>
-	</header>
-	<section class="entries">
-		<div></div>
-	</section>
-</Container>
+<div class="main-box">
+	<Container>
+		<header>
+			<h2 id="PORTFOLIO" class="pf-header">My Portfolio <img src={sparkle} alt="" /></h2>
+		</header>
+		<section class="entries">
+			<ul>
+				{#each projectOrder.map((x) => projectData[x]) as project}
+					<li><ProjectPreview projectData={project} onView={openReelModal} /></li>
+				{/each}
+			</ul>
+		</section>
+	</Container>
+</div>
+<ReelModal isOpen={reelModalOpen} projectData={reelModalProjectData} onClose={closeReelModal} />
 
 <style lang="scss">
+	.main-box {
+		background-color: var(--color-pf-white);
+	}
 	header {
 		padding-top: 99px;
 	}
@@ -35,13 +64,10 @@
 	.entries {
 		margin-top: 95px;
 
-		div {
-			width: 1296px;
-			height: 625px;
-      border-radius: 24px;
-
-      background-color: var(--var-pf-white);
-      box-shadow: rgba(0, 0, 0, 0.25) 0 0 25px -3px;
+		ul {
+			li {
+				margin-bottom: 64px;
+			}
 		}
 	}
 </style>
