@@ -4,6 +4,7 @@
 	import AboutMe from '$lib/components/sections/AboutMe';
 	import ToolingBar from '$lib/components/ToolingBar';
 	import Portfolio from '$lib/components/sections/Portfolio';
+	import Contact from '$lib/components/sections/Contact';
 </script>
 
 <Landing />
@@ -11,4 +12,4 @@
 <AboutMe />
 <ToolingBar />
 <Portfolio />
-<div id="CONTACT" />
+<Contact />
