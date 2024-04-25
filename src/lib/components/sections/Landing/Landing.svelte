@@ -7,7 +7,7 @@
 </script>
 
 <div class="main-landing">
-	<header>
+	<header id="">
 		<Container>
 			<NavBar />
 		</Container>
@@ -16,7 +16,7 @@
 		<div class="landing-content">
 			<div class="hero-card">
 				<section class="hero-text-side">
-					<h1 id="">Hello I'm Stevie.</h1>
+					<h1>Hello I'm Stevie.</h1>
 
 					<p class="dev-text">
 						I am a <span class="dev-job-title">Front End Developer</span>&period;

@@ -25,8 +25,8 @@
 
 <div class="main-box">
 	<Container>
-		<header>
-			<h2 id="PORTFOLIO" class="pf-header">My Portfolio <img src={sparkle} alt="" /></h2>
+		<header id="PORTFOLIO">
+			<h2 class="pf-header">My Portfolio <img src={sparkle} alt="" /></h2>
 		</header>
 		<section class="entries">
 			<ul>
@@ -65,7 +65,8 @@
 		margin-top: 95px;
 
 		ul {
-			li {
+      padding-bottom: 46px;
+			li:not(:last-child) {
 				margin-bottom: 64px;
 			}
 		}

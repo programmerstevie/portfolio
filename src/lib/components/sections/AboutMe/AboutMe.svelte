@@ -23,8 +23,8 @@
 			</aside>
 
 			<div class="text-side">
-				<header>
-					<h2 id="ABOUT">About Me <img src={boxCodeIcon} alt="" /></h2>
+				<header id="ABOUT">
+					<h2>About Me <img src={boxCodeIcon} alt="" /></h2>
 				</header>
 				<ul class="description">
 					<li>
