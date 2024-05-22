@@ -18,12 +18,12 @@ const socials_data: Record<SocialType, SocialData> = {
 	github: {
     name: 'Github',
 		icon_src: social_icon_github,
-		link: new URL('https://github.com/stothesecond')
+		link: new URL('https://github.com/programmerstevie')
 	},
 	instagram: {
     name: 'Instagram',
 		icon_src: social_icon_instagram,
-		link: new URL('https://www.instagram.com/big_simba')
+		link: new URL('https://www.instagram.com/programmerstevie')
 	},
 	linkedin: {
     name: 'LinkedIn',
