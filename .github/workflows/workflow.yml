@@ -2,7 +2,7 @@ name: workflow
 run-name: ${{ github.actor }} is deploying the site.
 on: [push]
 jobs:
-  check-bats-version:
+  deploy-to-s3:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
