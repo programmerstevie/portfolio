@@ -14,7 +14,7 @@
 	.mainsection {
 		width: 100vw;
 		height: 100vh;
-		background-image: var(--color-pf-landing-gradient);
+		background-image: var(--color-pf-landing-gradient-mobile);
 
 		color: var(--color-pf-light-gray);
 		text-align: center;

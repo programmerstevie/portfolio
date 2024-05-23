@@ -47,6 +47,8 @@ body {
 
 	--color-pf-landing-gradient: linear-gradient(to bottom, #15191e, #020d1e 80%, #173460);
 
+	--color-pf-landing-gradient-mobile: linear-gradient(to bottom, #15191e, #020d1e 80%, #11294d 90%, #15191e);
+
 	--dimension-container-width: 1296px;
 }
 
