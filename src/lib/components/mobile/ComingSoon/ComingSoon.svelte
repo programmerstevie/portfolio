@@ -9,7 +9,7 @@
 
 <style lang="scss">
 	:global(body) {
-		background-color: var(--color-pf-primary-2);
+		background-color: #15191e;
 	}
 	.mainsection {
 		width: 100vw;
