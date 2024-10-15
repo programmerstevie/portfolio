@@ -31,7 +31,6 @@
 	footer {
 		height: 227px;
 		background-color: var(--color-pf-white);
-    margin-top: 80px;
 
 		header {
 			height: 0;
