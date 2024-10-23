@@ -8,7 +8,7 @@
 	import type { PortfolioProjectData, ProjectName } from './Projects/resources/types';
 	import ReelModal from './ReelModal.svelte';
 
-	const projectOrder: ProjectName[] = ['ARCHIVS', 'HALite', 'DiligentlyAI', 'Tasque'];
+	const projectOrder: ProjectName[] = ['DiligentlyAI', 'ARCHIVS', 'HALite', 'Tasque'];
 
 	let reelModalOpen = false;
 	let reelModalProjectData: PortfolioProjectData | null = null;
@@ -17,10 +17,10 @@
 		reelModalOpen = true;
 		reelModalProjectData = proj;
 	}
-  function closeReelModal() {
-    reelModalOpen = false;
-    reelModalProjectData = null;
-  }
+	function closeReelModal() {
+		reelModalOpen = false;
+		reelModalProjectData = null;
+	}
 </script>
 
 <div class="main-box">
@@ -65,7 +65,7 @@
 		margin-top: 95px;
 
 		ul {
-      padding-bottom: 46px;
+			padding-bottom: 46px;
 			li:not(:last-child) {
 				margin-bottom: 64px;
 			}
