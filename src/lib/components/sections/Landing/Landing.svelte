@@ -19,7 +19,7 @@
 					<h1>Hello I'm Steven.</h1>
 
 					<p class="dev-text">
-						I am a <span class="dev-job-title">Front End Developer</span>&period;
+						I am a <span class="dev-job-title">Full Stack Developer</span>&period;
 					</p>
 
 					<section class="tech-stack">

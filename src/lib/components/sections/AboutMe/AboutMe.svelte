@@ -30,32 +30,31 @@
 					<li>
 						<img src={personIcon} alt="" width="27px" height="27px" />
 						<p>
-							Hi there! I'm Stevie, a meticulous front-end developer thriving in Broward County,
-							Florida. I take pride in creating websites that are dependable and professional.
+							I'm Steven, a Full Stack Developer specializing in production-grade
+							web applications and scalable cloud systems.
 						</p>
 					</li>
 					<li>
 						<img src={codeIcon} alt="" width="27px" height="20px" />
 						<p>
-							Proficient in front end web development, I focus on crafting user-friendly digital
-							experiences. My work reflects precision and reliability, ensuring seamless navigation
-							and functionality.
+							I have 4+ years of professional experience building frontend
+							and backend features for SaaS, e-commerce,
+							and critical infrastructure platforms.
 						</p>
 					</li>
 					<li>
 						<img src={calendarIcon} alt="" width="22px" height="25px" />
 						<p>
-							Rooted in authenticity, I approach each project with a methodical mindset. Building
-							solid connections and delivering consistent craftsmanship are my priorities. I thrive
-							in collaboration with like-minded professionals who value reliability.
+							My focus is delivering reliable,
+							user-centric solutions that perform at scale
+							and stand the test of real-world usage.
 						</p>
 					</li>
 					<li>
 						<img src={globeIcon} alt="" width="25px" height="25px" />
 						<p>
-							On this journey, my goal is to forge lasting partnerships with teams that appreciate
-							the quiet confidence of reliable digital work. Let's build a future grounded in trust
-							and excellence together!
+							Here's a selection of my work — designed to solve real problems
+							and create lasting impact.
 						</p>
 					</li>
 				</ul>
