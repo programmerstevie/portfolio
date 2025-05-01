@@ -28,7 +28,7 @@
 				</section>
         <section class="hero-portrait-side">
           <div class="hero-portrait-oval"/>
-          <img src={portrait} alt="stevie" />
+          <img src={portrait} alt="Steven" />
         </section>
 			</div>
 		</div>

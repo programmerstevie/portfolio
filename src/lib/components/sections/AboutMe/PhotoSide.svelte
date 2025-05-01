@@ -2,8 +2,8 @@
 	import puzzleIcon from '$lib/assets/icons/general/svg/puzzle.svg';
 	import huggingFaceIcon from '$lib/assets/icons/general/svg/huggingface.svg';
 
-	import stevieSmallPhoto from '$lib/assets/steven/portrait-small.png';
-	import stevieLargePhoto from '$lib/assets/steven/portrait-large.png';
+	import stevenSmallPhoto from '$lib/assets/steven/portrait-small.png';
+	import stevenLargePhoto from '$lib/assets/steven/portrait-large.png';
 	// import { onMount } from 'svelte';
 
 	/**
@@ -26,7 +26,7 @@
 				rotateElement(e, photoContainer);
 			});
 
-			cursorDetectionElement.addEventListener('mouseleave', (e) => {
+			cursorDetectionElement.addEventListener('mouseleave', () => {
 				if (photoContainer === undefined) return;
 				photoContainer.style.setProperty('--rotateX', '0deg');
 				photoContainer.style.setProperty('--rotateY', '0deg');
@@ -63,8 +63,8 @@
 
 <!-- <div class="main" bind:this={cursorDetectionElement}> -->
 <div class="photo-container" bind:this={photoContainer}>
-	<div class="stevie-small-photo">
-		<img src={stevieSmallPhoto} alt="Me and my dog." />
+	<div class="steven-small-photo">
+		<img src={stevenSmallPhoto} alt="Me and my dog." />
 	</div>
 	<div class="puzzle-icon">
 		<img src={puzzleIcon} alt="" />
@@ -72,8 +72,8 @@
 	<div class="hugging-face-icon">
 		<img src={huggingFaceIcon} alt="" />
 	</div>
-	<div class="stevie-large-photo">
-		<img src={stevieLargePhoto} alt="Me programming at my desk." />
+	<div class="steven-large-photo">
+		<img src={stevenLargePhoto} alt="Me programming at my desk." />
 	</div>
 </div>
 
@@ -112,7 +112,7 @@
 			position: absolute;
 		}
 
-		.stevie-small-photo {
+		.steven-small-photo {
 			left: 0px;
 			top: 0px;
 			transform: translateZ(-10px);
@@ -174,7 +174,7 @@
 			}
 		}
 
-		.stevie-large-photo {
+		.steven-large-photo {
 			left: 191px;
 			top: 234px;
 			transform-style: preserve-3d;
